@@ -17,18 +17,18 @@ int main(int argc, const char * argv[]) {
         int buyOrNotBuy;
         
         // question no 1 - yes/no
-        printf("You walk past a MAGIC pet shop, will you go inside?\n 0) DEFINITELY!!! \n 1) No, I can't even keep a plant alive.");
+        printf("You walk past a MAGIC pet shop, will you go inside?\n\n 0) DEFINITELY!!! \n 1) No, I can't even keep a plant alive.\n");
         scanf("%d", &yesOrNo);
         if (yesOrNo == 0) {
-            printf("Welcome to the magical pet shop! You step inside.");
+            printf("Welcome to the magical pet shop! You step inside.\n");
             
             // if yes, question no 2 - pick a magic pet
-            printf("\nNow, this is VERY important: What type of pet would you like?");
+            printf("Now, this is VERY important: What type of pet would you like?\n");
             scanf("%s", yourPet);
-            printf("You want a %s! The %ss from our store are very special, they can talk and do backflips!\n", yourPet, yourPet);
+            printf("You want a %s! The %ss from our store are very special, they can talk and do backflips!\n\n", yourPet, yourPet);
             
             // if yes, question no 3 - do you take the pet home?
-            printf("Do you buy the magic %s?\n 0) OF COURSE!! \n 1) No, I'm allergic", yourPet);
+            printf("Do you buy the magic %s?\n\n 0) OF COURSE!! \n 1) No, I'm allergic.\n", yourPet);
             scanf("%d", &buyOrNotBuy);
             if(buyOrNotBuy == 0) {
                 printf("You take the magic %s home and name it Harry. Harry becomes an internet celebrity and makes you rich. The End.", yourPet);
